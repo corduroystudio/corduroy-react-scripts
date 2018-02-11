@@ -1,8 +1,8 @@
 {
-  "name": "react-scripts",
+  "name": "corduroy-react-scripts",
   "version": "1.1.1",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "corduroystudio/corduroy-react-scripts",
   "license": "MIT",
   "engines": {
     "node": ">=6"
@@ -60,8 +60,24 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "lint-staged": {
+    "lib/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2
   },
   "optionalDependencies": {
     "fsevents": "^1.1.3"
