@@ -1,6 +1,6 @@
 {
   "name": "corduroy-react-scripts",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Configuration and scripts for Create React App.",
   "repository": "corduroystudio/corduroy-react-scripts",
   "license": "MIT",
@@ -10,7 +10,13 @@
   "bugs": {
     "url": "https://github.com/facebookincubator/create-react-app/issues"
   },
-  "files": ["bin", "config", "scripts", "template", "utils"],
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template",
+    "utils"
+  ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },
@@ -65,7 +71,10 @@
     "react-dom": "^16.0.0"
   },
   "lint-staged": {
-    "lib/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
+    "lib/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "printWidth": 80,
